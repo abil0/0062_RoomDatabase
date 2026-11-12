@@ -1,6 +1,10 @@
 package com.example.pertemuan9.view
 
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import com.example.pertemuan9.room.Siswa
 import com.example.pertemuan9.uicontroller.DestinasiNavigasi
 
 object DestinasiHome : DestinasiNavigasi {
@@ -53,7 +57,7 @@ fun HomeScreen(
 @Composable
 fun BodyHome(
     itemSiswa: List<Siswa>,
-    modifier: Modifier=Modifier){
+    modifier: Modifier =Modifier){
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = modifier
@@ -69,6 +73,23 @@ fun BodyHome(
                 itemSiswa = itemSiswa,
                 modifier = Modifier.padding(horizontal =
                     dimensionResource(id = R.dimen.padding_small))
+            )
+        }
+    }
+}
+
+@Composable
+fun ListSiswa(
+    itemSiswa : List<Siswa>,
+    modifier: Modifier=Modifier
+){
+    LazyColumn(modifier = Modifier){
+        items(items = itemSiswa, key = {it.id}){
+                person ->
+            DataSiswa(
+                siswa = person,
+                modifier = Modifier
+                    .padding(dimensionResource(id = R.dimen.padding_small))
             )
         }
     }
