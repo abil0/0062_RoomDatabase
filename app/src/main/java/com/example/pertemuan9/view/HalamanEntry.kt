@@ -1,4 +1,4 @@
-package com.example.roomsiswa.view
+package com.example.pertemuan9.view
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -23,7 +23,13 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.pertemuan9.R
 import com.example.pertemuan9.uicontroller.DestinasiNavigasi
+import com.example.pertemuan9.uicontroller.SiswaTopAppBar
+import com.example.pertemuan9.viewmodel.DetailSiswa
+import com.example.pertemuan9.viewmodel.EntryViewModel
+import com.example.pertemuan9.viewmodel.PenyediaViewModel
+import com.example.pertemuan9.viewmodel.UIStateSiswa
 import kotlinx.coroutines.launch
 
 object DestinasiEntry: DestinasiNavigasi {

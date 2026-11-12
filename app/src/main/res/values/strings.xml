@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">pertemuan9</string>
+    <string name="back">Kembali</string>
+    <string name="entry_siswa">Entry Siswa</string>
+    <string name="btn_submit">Simpan</string>
+    <string name="nama">Nama</string>
+    <string name="alamat">Alamat</string>
+    <string name="telpon">Telepon</string>
+    <string name="required_field">* wajib diisi</string>
+    <string name="deskripsi_no_item">Tidak ada data siswa. Tekan + untuk menambah.</string>
 </resources>

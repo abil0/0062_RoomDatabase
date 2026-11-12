@@ -1,6 +1,5 @@
 package com.example.pertemuan9.viewmodel
 
-package com.example.pertemuan9
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf

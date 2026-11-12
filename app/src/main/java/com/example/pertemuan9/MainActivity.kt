@@ -7,14 +7,14 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import com.example.roomsiswa.ui.theme.RoomSiswaTheme
-import com.example.roomsiswa.uicontroller.SiswaApp
+import com.example.pertemuan9.ui.theme.Pertemuan9Theme
+import com.example.pertemuan9.uicontroller.SiswaApp
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            RoomSiswaTheme {
+            Pertemuan9Theme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
